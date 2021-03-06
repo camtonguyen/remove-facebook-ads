@@ -1,0 +1,5 @@
+a[aria-label="Advertiser link"],
+div[data-pagelet="RightRail"] > div > span {
+    display: none !important;
+}
+  

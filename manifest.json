@@ -1,0 +1,20 @@
+{
+    "name": "Remove Facebook Ads",
+    "version": "1.1",
+    "author": "Cam To",
+    "description": "Remove facebook ads on browser",
+    "manifest_version": 2,
+    "incognito": "split",
+    "icons": {
+        "48": "logo.png",
+        "256": "logo.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*.facebook.com/*"],
+          "css": ["style.css"],
+          "js": ["script.js"],
+          "run_at": "document_idle"
+        }
+    ]
+}
